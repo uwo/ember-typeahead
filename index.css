@@ -1,0 +1,25 @@
+.my-typeahead .typeahead-hint {
+	color: #999;
+	position:absolute;
+	top: 0px;
+	left: 0px;
+	border-color: transparent;
+	box-shadow: none;
+	opacity: 1;
+	background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);
+
+}
+.my-typeahead .typeahead-input {
+	position: relative;
+	vertical-align: top;
+	background-color: transparent;
+}
+
+.my-typeahead .dropdown-menu {
+	font-size: 14px; /* override the input append font-size: 0 */
+}
+
+.my-typeahead {
+	position: relative;
+	display: inline-block;
+}

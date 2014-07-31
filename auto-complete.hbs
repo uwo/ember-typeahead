@@ -1,0 +1,22 @@
+{{input 
+	value=hint 
+	class="typeahead-hint" 
+	spellcheck="false"
+	tabindex="-1"
+	readonly="readonly"
+	autocomplete="off"}}
+
+{{input 
+	id="main"
+	value=selection
+	class="typeahead-input"
+	spellcheck="false"
+	autocomplete="off"}}
+
+	<ul class="dropdown-menu" {{bind-attr style=displaySuggestions}}>
+		{{#each suggestions itemViewClass="Portal.AutoCompleteSuggestionView"}}
+			<a {{action 'setSuggestionIndex' _view.contentIndex on="mouseEnter"}}>
+				{{this}} 
+			</a>
+		{{/each}}
+	</ul>
